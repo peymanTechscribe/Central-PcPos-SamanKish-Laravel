@@ -19,14 +19,14 @@ use Illuminate\Support\Facades\Http;
  * You should configure the following in your config/seppay.php file:
  *
  * return [
- *     'client_secret' => env('SEPPAY_CLIENT_SECRET'),
- *     'username' => env('SEPPAY_USERNAME'),
- *     'password' => env('SEPPAY_PASSWORD'),
- *     'token_url' => env('SEPPAY_TOKEN_URL'),
- *     'identifier_url' => env('SEPPAY_IDENTIFIER_URL'),
- *     'inquiry_url' => env('SEPPAY_INQUIRY_URL'),
- *     'payment_url' => env('SEPPAY_PAYMENT_URL'),
- *     'terminal_id' => env('SEPPAY_TERMINAL_ID'),
+ *     'client_secret' => env('SEPPAY_CLIENT_SECRET'), // دریافت از سامان کیش 
+ *     'username' => env('SEPPAY_USERNAME'), //  دریافت از سامان کیش 
+ *     'password' => env('SEPPAY_PASSWORD'),  //  دریافت از سامان کیش 
+ *     'token_url' => env('SEPPAY_TOKEN_URL','https://idn.seppay.ir/connect/token'), 
+ *     'identifier_url' => env('SEPPAY_IDENTIFIER_URL','https://cpcpos.seppay.ir/v1/PcPosTransaction/ReciveIdentifier'),
+ *     'inquiry_url' => env('SEPPAY_INQUIRY_URL','https://cpcpos.seppay.ir/v1/PcPosTransaction/Inquery'),
+ *     'payment_url' => env('SEPPAY_PAYMENT_URL','https://cpcpos.seppay.ir/v1/PcPosTransaction/StartPayment'),
+ *     'terminal_id' => env('SEPPAY_TERMINAL_ID'), //  شماره ترمینال دستگاه
  *     'scope' => env('SEPPAY_SCOPE', 'SepCentralPcPos openid'),
  * ];
  */
