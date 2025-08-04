@@ -129,7 +129,6 @@ class PcPosService
             return $this->formatErrorResponse('Cancel Pending Failed', 'خطا در لغو تراکنش در حال انتظار', $cancelResponse);
         }
 
-        sleep(2); // Wait before retry
 
         return [
             'step' => 'Cancelled',
